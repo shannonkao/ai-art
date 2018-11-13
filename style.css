@@ -1,4 +1,7 @@
-
+body, html {
+    height: 100%;
+    /*background: linear-gradient(-135deg, #ff005e, #00d0ff);*/
+}
 
 #overlay, .overlay {
   position: absolute;
@@ -14,4 +17,27 @@
     display: inline-block;
     position: relative;
     margin: 20px;
+    overflow: hidden;
+    line-height: 0px;
+    border-radius: 10px;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.button {
+    position: absolute;
+    line-height: normal;
+    text-transform: uppercase;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 28px;
+}
+.button:hover {
+    color: #fff;
+    cursor: pointer;
 }
